@@ -1,0 +1,178 @@
+{
+  "id": "7d707a70-4e8e-4775-b8df-86ceab3c643f",
+  "version": "2.0",
+  "name": "DAY3 TASK",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "8ca698f1-18b3-46a7-ab4e-6275560d42d7",
+    "name": "Day3 01",
+    "commands": [{
+      "id": "a92bc4b1-a242-43cb-b62a-79bc74c96cde",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4009558f-7b21-4555-b718-b138712f71cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x857",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2d3a61c-648e-4a6a-82fc-908113888f9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.nav-item:nth-child(1) li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fac47bbe-bb72-4747-b70e-39e4003937e2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "caa9b4e3-50a4-4407-a0c4-de63df76ed3b",
+    "name": "Day3 02",
+    "commands": [{
+      "id": "3c8a19b0-e178-41e9-bb53-dca88d097525",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d171e598-8128-41a0-a231-114ce98bd552",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x857",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2436a3e9-bc4f-4d4b-a9a5-b543744074c9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phones & PDAs",
+      "targets": [
+        ["linkText=Phones & PDAs", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Phones & PDAs')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=24')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phones & PDAs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6bbfa88-936a-411a-b2f6-68af6733c4b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) .description",
+      "targets": [
+        ["css=.col:nth-child(1) .description", "css:finder"],
+        ["xpath=//div[@id='product-list']/div/form/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e3e7aa3-5b60-4f05-a1d8-fd9003d45f1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.col:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='HTC Touch HD']", "xpath:img"],
+        ["xpath=//div[@id='product-list']/div/form/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//form/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1bb1c7a-9e7d-4bd7-b03c-4ad7865c0f84",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'HTC Touch HD')]", "xpath:innerText"]
+      ],
+      "value": "var1"
+    }, {
+      "id": "4b3515c5-a707-4a14-9687-6d95d92de583",
+      "comment": "",
+      "command": "echo",
+      "target": "${var1}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "da11a36f-b914-4064-aa95-e803445d156a",
+    "name": "Day3 03",
+    "commands": [{
+      "id": "14d2efd1-6777-40f1-835b-e15dab907569",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8840f595-af9e-42d4-848d-b339ea74258e",
+      "comment": "",
+      "command": "store",
+      "target": "Your Store",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "9ae7f942-8870-4b63-9135-0bab4823d5fb",
+      "comment": "",
+      "command": "store",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "34e754ef-2eef-4eb5-b3e7-cd231f2472db",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${title}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "584801a4-ed55-4ec0-b2b4-7b5cd1b4bfa2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.URL",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "f1381fc4-ae56-4094-8949-6cd23ae526ce",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://demo.opencart.com/"
+    }]
+  }],
+  "suites": [{
+    "id": "5ca05b1a-e67d-4dfb-a989-bb9a7a1ff1b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8ca698f1-18b3-46a7-ab4e-6275560d42d7"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}

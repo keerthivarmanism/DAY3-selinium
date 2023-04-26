@@ -1,0 +1,57 @@
+{
+  "id": "7d707a70-4e8e-4775-b8df-86ceab3c643f",
+  "version": "2.0",
+  "name": "DAY3 TASK",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "8ca698f1-18b3-46a7-ab4e-6275560d42d7",
+    "name": "Day3 01",
+    "commands": [{
+      "id": "a92bc4b1-a242-43cb-b62a-79bc74c96cde",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4009558f-7b21-4555-b718-b138712f71cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x857",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2d3a61c-648e-4a6a-82fc-908113888f9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.nav-item:nth-child(1) li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fac47bbe-bb72-4747-b70e-39e4003937e2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5ca05b1a-e67d-4dfb-a989-bb9a7a1ff1b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8ca698f1-18b3-46a7-ab4e-6275560d42d7"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
